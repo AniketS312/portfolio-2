@@ -1,0 +1,8 @@
+.main {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}

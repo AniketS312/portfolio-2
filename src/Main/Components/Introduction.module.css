@@ -1,0 +1,45 @@
+.introduction {
+    display: flex;
+    height: 100vh;
+    background-color: #F1EDEE;
+}
+
+.introduction__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+    color: #414535;
+}
+
+.introduction__text span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    margin  : 0;
+}
+
+.introduction__text h1 {
+    font-size: 5rem;
+    margin: 1rem 0;
+}
+
+.introduction__text p {
+    margin-bottom: 2rem;
+}
+
+.introduction__text div {
+    margin-top: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.introduction__image {
+   width: 50%;
+}
+
+.introduction__image img {
+    height: 100%;
+    width: auto;
+}

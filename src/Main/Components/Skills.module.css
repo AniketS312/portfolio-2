@@ -1,0 +1,38 @@
+.skills {
+    display: flex;
+    height: 100vh;
+    background-color: #414535;
+    padding: 2rem;
+    gap: 30px;
+}
+
+.skills div {
+    width: 50%;
+    height: inherit;
+    padding: 2rem 0;
+}
+
+.skills .description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skills .description .description__container {
+    margin-right: 0;
+    height: auto;
+    width: 100%;
+}
+
+.skills .description .description__container h5 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.skills .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
