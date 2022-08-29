@@ -1,0 +1,23 @@
+.projects {
+    padding-right: 3rem;
+}
+
+.projects h4 {
+    text-align: right;
+}
+
+.projects .project-grid {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project-grid  a {
+    content: ' ';
+    width: 15%;
+    height: 30%;
+}
+
+.project-grid .one {
+    background-image: url('../../assets/website.jpg');
+}

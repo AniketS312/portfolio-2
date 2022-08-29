@@ -1,7 +1,6 @@
 .skills {
     display: flex;
-    height: 100vh;
-    background-color: #414535;
+    
     padding: 2rem;
     gap: 30px;
 }
@@ -24,10 +23,6 @@
     width: 100%;
 }
 
-.skills .description .description__container h5 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-}
 
 .skills .services {
     display: flex;

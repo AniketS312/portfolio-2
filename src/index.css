@@ -27,3 +27,24 @@ html {
 h1,h2,h3,h4,h5,h6, p {
   margin: 0;
 }
+
+section {
+  height: 100vh;
+  background-color: #414535;
+}
+
+h4 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+h5 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+

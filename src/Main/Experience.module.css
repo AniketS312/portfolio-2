@@ -1,0 +1,53 @@
+.experience-section {
+    display: flex;
+    padding: 2rem;
+    gap: 100px;
+}
+
+.experience-section > div {
+    flex-grow: 1;
+}
+
+/* Timeline styling */
+.timeline {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline .container {
+    display: flex;
+    gap: 20px;
+}
+
+.timeline .info {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+}
+
+.timeline .info::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10%;
+    background-color: white;
+    width: 2px;
+    height: 100%;
+    transform: translatex(-50%);
+}
+
+.timeline .info::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border:  2px solid white;
+    transform: translate(-50%, -50%);
+}
+.timeline .info span {
+    font-weight: 500;
+}
