@@ -5,10 +5,13 @@ import SideBar from './SideBar/SideBar';
 function App() {
   return (
     <div className="App">
-      <SideBar />
+      <SideBar 
+        PageNumber="01"  
+      />
       <Main />
     </div>
   );
-}
+};
+
 
 export default App;
