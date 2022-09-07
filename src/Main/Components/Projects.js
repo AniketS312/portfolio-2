@@ -11,6 +11,23 @@ const Projects = () => {
             <div className={classes['project-grid']}>
                 <IndividualProject 
                     project={classes.one}
+                    href={`https://anikets312.github.io/Weather-App/`}
+                    projectName={'Weather App'}
+                />
+                <IndividualProject 
+                    project={classes.two}
+                />
+                <IndividualProject 
+                    project={classes.one}
+                />
+                <IndividualProject 
+                    project={classes.one}
+                />
+                <IndividualProject 
+                    project={classes.one}
+                />
+                <IndividualProject 
+                    project={classes.one}
                 />
             </div>
         </section>
@@ -19,7 +36,7 @@ const Projects = () => {
 
 const IndividualProject = (props) => {
     return (
-            <a className={props.project}></a>
+            <a href={props.href} target="_blank"className={props.project}>{props.projectName}</a>
     )
 }
 

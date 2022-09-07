@@ -42,6 +42,11 @@
     text-transform: uppercase;
 }
 
+.description p {
+    color: #F1EDEE;
+    letter-spacing: .1rem;
+}
+
 .nav-section img {
     margin: 0 auto;
 
@@ -53,3 +58,4 @@
     -webkit-text-stroke: 3px white;
     color: rgba(0,0,0, 0);
 }
+

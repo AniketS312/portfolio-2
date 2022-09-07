@@ -17,23 +17,23 @@ const SkillsDiscription = () => {
         <div className={classes.description}>
             <Description 
                 icon={<Desktop />}
-                skill={'Skill 1'}
-                description={'This is a long description of the skill I have. I will ahve to edit this to form a more meaning action'}
+                skill={'Design'}
+                description={'Create appealing designs based on feedback provided by clients and solve design painpoints.'}
             />
              <Description 
                 icon={<TerminalFilled />}
-                skill={'Skill 1'}
-                description={'This is a long description of the skill I have. I will ahve to edit this to form a more meaning action'}
+                skill={'Development'}
+                description={'Develop, maintain and improve the structure of the website and implement new technologies.'}
             />
              <Description 
                 icon={<Bookmark />}
-                skill={'Skill 1'}
-                description={'This is a long description of the skill I have. I will ahve to edit this to form a more meaning action'}
+                skill={'Marketing'}
+                description={'Implement wide variety of tools to collect data. Furthermore, create business ideas and oppurtunites to drive growth.'}
             />
              <Description 
                 icon={<Application />}
-                skill={'Skill 1'}
-                description={'This is a long description of the skill I have. I will ahve to edit this to form a more meaning action'}
+                skill={'Reporting / Admin'}
+                description={'Maintain a solid chain of command internally and onboard and offboard clients.'}
             />
         </div>
     )
@@ -54,12 +54,14 @@ const Description = (props) => {
 const SkillsCoverLetter = () => {
     return (
         <div className={classes.services}>
-            <h4>Services</h4>
-            <span>eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Vitae proin sagittis nisl rhoncus mattis. Faucibus a pellentesque sit amet porttitor eget. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Enim lobortis scelerisque fermentum dui faucibus in. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Eget felis eget nunc lobortis mattis aliquam. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Tristique nulla aliquet enim tortor at auctor urna nunc id. Tincidunt vitae semper quis lectus nulla at volutpat diam.</p>
+            <h4>My Skills</h4>
+            <p>I started my career in tech when I was fortunate enough to work for an agency owner in Chicago. Originally I was hired to work as a website designer but I quickly took up many hats which introduced me to all different aspects of the web.</p>
+            <p>I started out with building websites on wix from scratch. But soon the job did not just stop there. Over time I learned how to propely use the right marketing tools.</p>
+            <p>As I learned more web design and marketing I was given more complex Projects. Projects that needed some setup of javascript code. Wix itself uses React on the backed with documentations to proivde some custom solutions.</p>
+            <p>Throughout my work I decided that I cannot be a jack of all trades. I had to specialize. I chose to dive deeper into web development. NEED TO FINISH THIS</p>
             <div className={classes.buttons}>
-                <button>Button One</button>
-                <button>Button Two</button>
+                <button>My Resume</button>
+                <button>My Github</button>
             </div>
         </div>
     )

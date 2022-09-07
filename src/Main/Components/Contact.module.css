@@ -1,0 +1,60 @@
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 20px
+}
+
+
+.contact-info,
+.contact-form {
+    flex-basis: 50%;
+    height: 100%;
+}
+
+
+.form {
+    background-color: #ED6A5E;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.form form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 2rem;
+    gap: 20px;
+    width: 100%;
+}
+
+form .message {
+flex-grow: 2;
+}
+
+
+form input[type=text] {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+form input[type=submit] {
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+form input:focus {
+    outline: none;
+}
+
+
+

@@ -5,7 +5,6 @@
 }
 
 .introduction__text {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,13 +19,36 @@
     margin  : 0;
 }
 
-.introduction__text h1 {
-    font-size: 5rem;
-    margin: 1rem 0;
-}
-
 .introduction__text p {
     margin-bottom: 2rem;
+    margin-right: 3rem;
+    color: #414535;
+}
+
+.introduction__text a {
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #414535;
+    position: relative;
+};
+
+.introduction__text a::before {
+    content: "";
+    border: 1px solid black;
+    position: absolute;
+    width: 5rem;
+    height: 10px;
+    left: 0;
+    top: 0;
+    background-color: #414535;
+}
+
+
+.introduction__text a:focus {
+    text-decoration: none;
+    border: none;
+    border-style: none;
 }
 
 .introduction__text div {
@@ -43,3 +65,4 @@
     height: 100%;
     width: auto;
 }
+

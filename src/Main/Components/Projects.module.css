@@ -2,22 +2,36 @@
     padding-right: 3rem;
 }
 
-.projects h4 {
-    text-align: right;
-}
 
 .projects .project-grid {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr;
+height: inherit;
+gap: 20px;
 }
 
 .project-grid  a {
-    content: ' ';
-    width: 15%;
-    height: 30%;
+    cursor: pointer;
+    transition: .4s all;
 }
 
+.project-grid  a:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
 .project-grid .one {
-    background-image: url('../../assets/website.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/weather-app.png'); 
+
+}
+
+.project-grid .two {
+    background-image: url('../../assets/weather-app.png');
+}
+
+.project-grid a {
+    background-size: cover;
 }

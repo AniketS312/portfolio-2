@@ -1,6 +1,5 @@
 .skills {
     display: flex;
-    
     padding: 2rem;
     gap: 30px;
 }
@@ -14,20 +13,76 @@
 .skills .description {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
 }
 
-.skills .description .description__container {
+
+.skills .description__container {
+    background-color: rgb(62, 66, 53);
     margin-right: 0;
     height: auto;
     width: 100%;
+    padding: 2rem 2rem;
 }
 
+
+.description__container svg {
+    fill: #eba7a1;
+    stroke: #eba7a1;
+}
 
 .skills .services {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 2rem;
+}
+
+
+.skills .services br {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.buttons button {
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 2px solid #ED6A5E;
+    padding: .8rem 0;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.buttons button::before {
+    position: absolute;
+    z-index: 5;
+    content: '';
+    top: 0;
+    left: 0;
+    border: 2px solid #eba7a1;
+    border-radius: 25px;    
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+button:hover::before {
+    animation-name: buttonHover;
+    animation-duration: .5s;
+}
+
+@keyframes buttonHover {
+    1% { opacity: 1 }
+    100% { opacity: 0; scale: 1.4;}
 }
 

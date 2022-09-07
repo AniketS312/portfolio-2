@@ -33,18 +33,42 @@ section {
   background-color: #414535;
 }
 
+ h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+h3 {
+  margin-bottom: .2rem;
+  text-transform: uppercase;
+  color: #ED6A5E;
+}
+
 h4 {
   font-size: 2rem;
   padding: 2rem 0;
+  color: #ED6A5E;
 }
 
 h5 {
   font-size: 1.5rem;
   padding: 1rem 0;
+  color: #ED6A5E;
 }
 
 h6 {
   font-size: 1.2rem;
 }
+
+main p,
+main span {
+  line-height: 1.5em;
+  letter-spacing: .05rem;
+  font-size: 1rem;
+  color: whitesmoke;
+  padding-bottom: 2rem;
+}
+
 
 

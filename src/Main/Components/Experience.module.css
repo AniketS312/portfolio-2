@@ -50,4 +50,10 @@
 }
 .timeline .info span {
     font-weight: 500;
+    padding-bottom: 0;
+}
+
+.timeline .info p,
+.timeline .info span {
+    padding-bottom: 0;
 }
