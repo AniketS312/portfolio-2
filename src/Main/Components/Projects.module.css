@@ -6,14 +6,40 @@
 .projects .project-grid {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+justify-items: stretch;
 height: inherit;
 gap: 20px;
+height: 700px;
 }
 
 .project-grid  a {
     cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
     transition: .4s all;
+    z-index: 10;
+}
+
+.project-grid a {
+    background-size: cover;
+
+}
+
+.project-grid a::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+
 }
 
 .project-grid  a:hover {
@@ -24,14 +50,16 @@ gap: 20px;
 
 
 .project-grid .one {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/weather-app.png'); 
-
+    background: url('../../assets/weather-app.png'); 
 }
 
 .project-grid .two {
-    background-image: url('../../assets/weather-app.png');
+    background-image: url('../../assets/lana.png');
 }
 
-.project-grid a {
-    background-size: cover;
+.project-grid .three {
+    background-image: url('../../assets/arch.png');
+
 }
+
+

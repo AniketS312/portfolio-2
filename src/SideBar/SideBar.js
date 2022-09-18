@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './SideBar.module.css'
 
-import Signature from '../assets/signature.png'
+import Signature from '../assets/signature-new.png'
 
 const SideBar = (props) => {
     return (
@@ -29,7 +29,7 @@ const SideBar = (props) => {
                     descriptionInfo="Contact Me"
                 />      
             </div>
-            <img width={'200px'} height={'100px'} src={Signature}/>
+            <img width={'250px'} height={'50px'} src={Signature}/>
             <span className={classes['page-number']}>{props.PageNumber}</span>
         </section>
     )

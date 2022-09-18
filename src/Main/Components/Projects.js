@@ -16,9 +16,13 @@ const Projects = () => {
                 />
                 <IndividualProject 
                     project={classes.two}
+                    href={'https://anikets312.github.io/Lana/'} 
+                    projectName={'Lana'}
                 />
                 <IndividualProject 
-                    project={classes.one}
+                    project={classes.three}
+                    href={'https://anikets312.github.io/arch/'} 
+                    projectName={"Arch"}
                 />
                 <IndividualProject 
                     project={classes.one}

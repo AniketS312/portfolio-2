@@ -1,17 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 
 import classes from './Contact.module.css'
 
 const Contact = () => {
+    const form = useRef();
+    const [error, setError] = useState(false);
     const [name, setName] = useState('');
+    const [nameError, setNameError] = useState(false)
     const [email, setEmail] = useState('');
+    const [emailError, setEmailError] = useState(false)
     const [topic, setTopic] = useState('');
+    const [topicError, setTopicError] = useState(false)
     const [message, setMessage] = useState('');
+    const [messageError, setMessageError] = useState(false)
+    const [successMessage, setSuccessMessage] = useState(false)
 
 
-    function clearInitalValue(event) {
-        console.log(event)
-    }
 
     function handleNameChange(event) {
         setName(event.target.value)
@@ -26,10 +32,54 @@ const Contact = () => {
     function handleMessageChange (event) {
         setMessage(event.target.value)
     }
-
+    
+    function resetFields() {
+        setError(false)
+        setName("")
+        setNameError(false)
+        setEmail("")
+        setEmailError(false)
+        setTopic("")
+        setTopicError(false)
+        setMessage("")
+        setMessageError(false)
+    }
+ 
     function handleFormSubmit (event) {
         event.preventDefault();
+        if( name === '') {
+            setError(true) 
+            setNameError(true)
+        }
+        if( email === '') {
+            setError(true)
+            setEmailError(true)
+        }
+        if( topic === '') {
+            setError(true)
+            setTopicError(true)
+        }
+        if( message === '') {
+            setError(true)
+            setMessageError(true)
+        }
+
+        emailjs.sendForm('service_zpty8q9', 'template_yqollpf', form.current, 'L6ZKmDHdlmjj9uzuf')
+        .then((result) => {
+            console.log(result.text);
+            resetFields()
+            setSuccessMessage(true)
+            setTimeout(() => {
+                setSuccessMessage(false)
+            }, 5000)
+
+        }, (error) => {
+            console.log(error.text);
+        });
+    
     }
+
+    
 
     return (
         <section className={classes.contact}>
@@ -39,17 +89,19 @@ const Contact = () => {
                 <p>
                 Ut illum nemo ea repellat fuga et obcaecati iusto non ullam tempore est nihil nemo id voluptatem sunt quo consectetur totam. Ut sapiente odit sed quam natus eum itaque assumenda placeat incidunt.
 
-Ut galisum recusandae in enim minima et voluptas sunt eos praesentium adipisci vel excepturi iusto in facere minima. Et adipisci commodi ut nulla corrupti ut odit quaerat qui voluptatem blanditiis. Nam eius quasi in quam sunt id necessitatibus quos non repellat eligendi et commodi quia qui ipsa quod ut temporibus reiciendis. Non consequatur unde eos quasi harum et beatae dignissimos est reprehenderit animi qui nihil dicta non sint voluptatibus.
+                Ut galisum recusandae in enim minima et voluptas sunt eos praesentium adipisci vel excepturi iusto in facere minima. Et adipisci commodi ut nulla corrupti ut odit quaerat qui voluptatem blanditiis. Nam eius quasi in quam sunt id necessitatibus quos non repellat eligendi et commodi quia qui ipsa quod ut temporibus reiciendis. Non consequatur unde eos quasi harum et beatae dignissimos est reprehenderit animi qui nihil dicta non sint voluptatibus.
                 </p>
             </div>
             <div className={classes['contact-form']}>
                 <div className={classes.form}>
-                    <form onSubmit={handleFormSubmit}>
-                        <input type="text" value={name} placeholder="Name" onClick={clearInitalValue} onChange={handleNameChange}/>
-                        <input type="text" value={email} placeholder="Email" onChange={handleEmailChange}/>
-                        <input type="text" value={topic} placeholder="Topic" onChange={handleTopicChange}/>
-                        <input type="text" placeholder="Message" className={classes.message} value={message} onChange={handleMessageChange}/>
+                    <form ref={form} onSubmit={handleFormSubmit} id="contact-form">
+                        <input type="text" value={name} name="from_name" placeholder="Name" onChange={handleNameChange} className={nameError ? classes.error : ''}/>
+                        <input type="email" name="reply_to" value={email} placeholder="Email" onChange={handleEmailChange} className={emailError ? classes.error : ''}/>
+                        <input type="text" value={topic} name="topic" placeholder="Topic" onChange={handleTopicChange} className={topicError ? classes.error : ''} />
+                        <textarea form="contact-form" name="message" type="text" placeholder="Message" value={message} onChange={handleMessageChange} className={messageError ? classes.error : ''}/>
                         <input type="submit" value="Submit"/>
+                        {error && <span>Whoops, Looks like something went wrong!</span>}
+                        {successMessage && <span>Form Submitted! Thank you.</span>}
                     </form>    
                 </div>
             </div>
