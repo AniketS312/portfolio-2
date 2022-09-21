@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Introduction from './Components/Introduction';
 import Skills from './Components/Skills';
@@ -9,10 +9,12 @@ import Contact from './Components/Contact';
 
 import classes from './Main.module.css'
 
-const Main = (props) => {    
+const Main = (props) => {  
+
+
     return (
-        <main className={classes.main}>
-            <Introduction/>
+        <main className={classes.main} id="main">
+            <Introduction />
             <Skills />
             <Projects />
             <Experience />

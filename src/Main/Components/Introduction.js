@@ -4,14 +4,14 @@ import classes from './Introduction.module.css'
 
 import SelfImage from '../../assets/placeholder.jpg'
 
-const Introducton = () => {
+const Introducton = (props) => {
     return (
         <section className={classes.introduction}>
             <div className={classes['introduction__text']}>
                 <IntroductionText />
             </div>
             <div className={classes['introduction__image']}>
-                <img src={SelfImage} alt='Aniket Sharma'/>
+                <img src={SelfImage} alt='Signature of Aniket Sharma'/>
             </div>
         </section>
     )

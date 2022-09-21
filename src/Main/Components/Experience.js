@@ -60,12 +60,13 @@ const TimelineSlot = (props) => {
 
 const CoverLetter = () => {
     return (
-        <div>
+        <div className={classes['cover-letter']}>
             <h4>Cover Letter</h4>
-            <p>Lorem ipsum dolor sit amet. Non quos suscipit qui nobis incidunt et optio asperiores At tenetur doloremque. Qui dolore sapiente sit explicabo odio cum nulla facilis aut fuga animi hic odio possimus.</p>
-            <p>Sit quidem totam aut velit libero quo facilis temporibus. Eum veritatis culpa sed dolores excepturi eos commodi perspiciatis qui voluptatem odio quo perspiciatis facilis rem tempora minus et deserunt praesentium.</p>
-            <p>Ad asperiores inventore nam totam ullam a molestiae fuga qui reiciendis quia vel explicabo laudantium quo tempore reiciendis sit rerum consequuntur. Eos saepe consequuntur id dignissimos atque id reprehenderit quos. Qui quam pariatur et temporibus nihil ut aspernatur quaerat? Et atque Quis qui fugit corporis non nobis quam.</p>
-            <img width={'250px'} height={'50px'} src={Signature}/>
+            <span>Firstly, I would like to thank you for taking the time to view my portfolio website and if you have any questions I am more than happy to help if you reach out. </span>
+            <p>I have made this website to showcase my talents and interest of working as a front end web developer. Currently I am working to become a full stack developer by using the MERN stack with the option of working with PostGRES.</p>
+            <p>With over a year of development experience and multiple years of experience in web design, marketing and customer management, I am more than capable of handling projects in both solo and team environments. I have worked in many different types of induestires that needed help with their digital presense and my background in business helps me analyze many of the needs.</p>
+            <p>I am confiendent in my abilties to learn the stack a oraganization uses. And with time to learn a companies culture and customs I will prove to be an asset and a major contributor on projects going forward.</p>
+            <img width={'250px'} height={'50px'} alt="Signature of Aniket Sharma." src={Signature}/>
         </div>
         )};
 

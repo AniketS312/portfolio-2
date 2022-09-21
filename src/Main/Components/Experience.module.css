@@ -58,3 +58,16 @@
 .timeline .info span {
     padding-bottom: 0;
 }
+
+/* Cover Letter section */
+.cover-letter  {
+    padding: 0 2rem;
+}
+
+.cover-letter span {
+    
+    display: block;
+    margin-bottom: .5rem;
+}
+
+

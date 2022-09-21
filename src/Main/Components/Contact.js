@@ -63,26 +63,26 @@ const Contact = () => {
             setError(true)
             setMessageError(true)
         }
-
-        emailjs.sendForm('service_zpty8q9', 'template_yqollpf', form.current, 'L6ZKmDHdlmjj9uzuf')
-        .then((result) => {
-            console.log(result.text);
-            resetFields()
-            setSuccessMessage(true)
-            setTimeout(() => {
-                setSuccessMessage(false)
-            }, 5000)
-
-        }, (error) => {
-            console.log(error.text);
-        });
+        if(name !== '' && email !== '' && topic !== '' && message !== '') {
+            emailjs.sendForm('service_zpty8q9', 'template_yqollpf', form.current, 'L6ZKmDHdlmjj9uzuf')
+            .then((result) => {
+                console.log(result.text);
+                resetFields()
+                setSuccessMessage(true)
+                setTimeout(() => {
+                    setSuccessMessage(false)
+                }, 5000)
     
+            }, (error) => {
+                console.log(error.text);
+            });
+        }
     }
 
     
 
     return (
-        <section className={classes.contact}>
+        <section className={classes.contact} id="contact">
             <div className={classes['contact-info']}>
                 <h4>Get In Touch</h4>
                 <span>Lorem ipsum dolor sit amet. Non nisi fugiat quia mollitia At nemo facere. Aut quos facere ab voluptatibus amet est nostrum quae ut internos possimus. Architecto voluptatem qui fugit odit a excepturi dignissimos qui illum atque rem soluta eius.</span>

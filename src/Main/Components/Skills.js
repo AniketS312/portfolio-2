@@ -3,7 +3,7 @@ import React from "react";
 import classes from './Skills.module.css'
 import { Desktop, TerminalFilled, Bookmark, Application } from './SkillsIcon'
  
-const Skills = () => {
+const Skills = (props) => {
     return (
         <section className={classes.skills}>
             <SkillsDiscription />

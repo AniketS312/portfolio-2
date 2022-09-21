@@ -5,11 +5,12 @@ import classes from './SideBar.module.css'
 import Signature from '../assets/signature-new.png'
 
 const SideBar = (props) => {
+
     return (
         <section className={classes['nav-section']}>
             <Numbers 
-                CurrentNumber = '01'
-                NextNumber = "02"
+                CurrentNumber = {props.PageNumber}
+                NextNumber = '06'
                 />
             <div className={classes['description-container']}>
                 <PersonalInfo 
@@ -23,13 +24,15 @@ const SideBar = (props) => {
                 <PersonalInfo 
                     description="Email"
                     descriptionInfo="aniketsharma312@gmail.com"
+
                 />
                 <PersonalInfo 
                     description="Contact Form"
                     descriptionInfo="Contact Me"
+                    contactFunction={props.contactFunction}
                 />      
             </div>
-            <img width={'250px'} height={'50px'} src={Signature}/>
+            <img width={'250px'} height={'50px'} src={Signature} alt='Signature of Aniket Sharma'/>
             <span className={classes['page-number']}>{props.PageNumber}</span>
         </section>
     )
@@ -49,7 +52,7 @@ const PersonalInfo = (props) => {
     return (
         <div className={classes['description']}>   
                <h3>{props.description}</h3>
-               <p>{props.descriptionInfo}</p>
+               <p onClick={props.contactFunction}>{props.descriptionInfo}</p>
         </div>
     )
 }
