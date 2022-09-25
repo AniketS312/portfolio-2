@@ -2,37 +2,49 @@ import React from "react";
 
 import classes from './Projects.module.css';
 
-import PortfolioImage from '../../assets/website.jpg';
-
 const Projects = () => {
     return (
         <section className={classes.projects}>
             <h4>Projects</h4>
             <div className={classes['project-grid']}>
+              <IndividualProject 
+                projectLink='#'
+                projectLinkClass={classes['one-project']}
+                projectName="Weather App"
+                projectStack="HTML, CSS, Javascript, FetchAPI"
+                projectClass={classes['one']}
+              />
                 <IndividualProject 
-                    project={classes.one}
-                    href={`https://anikets312.github.io/Weather-App/`}
-                    projectName={'Weather App'}
-                />
-                <IndividualProject 
-                    project={classes.two}
-                    href={'https://anikets312.github.io/Lana/'} 
-                    projectName={'Lana'}
-                />
-                <IndividualProject 
-                    project={classes.three}
-                    href={'https://anikets312.github.io/arch/'} 
-                    projectName={"Arch"}
-                />
-                <IndividualProject 
-                    project={classes.one}
-                />
-                <IndividualProject 
-                    project={classes.one}
-                />
-                <IndividualProject 
-                    project={classes.one}
-                />
+                projectLink='#'
+                projectName="Arch"
+                projectStack="HTML, SCSS, Javascript"
+                projectClass={classes['two']}
+              />
+
+              <IndividualProject 
+                projectLink='#'
+                projectName="Lana"
+                projectStack="HTML, SCSS, Javascript"
+                projectClass={classes['three']}
+              />
+               <IndividualProject 
+                projectLink='#'
+                projectName="Lana"
+                projectStack="HTML, SCSS, Javascript"
+                projectClass={classes['three']}
+              />
+               <IndividualProject 
+                projectLink='#'
+                projectName="Lana"
+                projectStack="HTML, SCSS, Javascript"
+                projectClass={classes['three']}
+              />
+               <IndividualProject 
+                projectLink='#'
+                projectName="Lana"
+                projectStack="HTML, SCSS, Javascript"
+                projectClass={classes['three']}
+              />
             </div>
         </section>
     )
@@ -40,7 +52,10 @@ const Projects = () => {
 
 const IndividualProject = (props) => {
     return (
-            <a href={props.href} target="_blank"className={props.project}>{props.projectName}</a>
+        <div className={classes.project}>
+            <a href={props.projectLink} >{props.projectName} <span>{props.projectStack}</span></a>
+            <div className={props.projectClass}></div>
+        </div>
     )
 }
 

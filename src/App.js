@@ -13,23 +13,22 @@ function App() {
 useEffect(() => {
   const heights = []
   document.querySelector('#main').childNodes.forEach(el => heights.push(el.offsetTop))
-  console.log(document.querySelector('#main').childNodes)
   setSectionHeights(heights)
 }, [])
 
 function changePageNumber() {
   if(mainHeight <= sectionHeights[0] + 50) {
     setPageNumber('01')
-  } else if(mainHeight > sectionHeights[0] && mainHeight < sectionHeights[1]) {
+  } else if(mainHeight > sectionHeights[0] && mainHeight < sectionHeights[1] + 50) {
     setPageNumber('02')
   }
-  else if(mainHeight > sectionHeights[1] && mainHeight < sectionHeights[2]) {
+  else if(mainHeight > sectionHeights[1] && mainHeight < sectionHeights[2] +50) {
     setPageNumber('03')
   }
-  else if(mainHeight > sectionHeights[2] && mainHeight < sectionHeights[3]) {
+  else if(mainHeight > sectionHeights[2] + 30 && mainHeight < sectionHeights[3]) {
     setPageNumber('04')
   }
-  else if(mainHeight > sectionHeights[3] && mainHeight < sectionHeights[4]){
+  else if(mainHeight > sectionHeights[3] + 50 && mainHeight < sectionHeights[4]){
     setPageNumber('05')
   } else if (mainHeight >= sectionHeights[4]) {
     setPageNumber('06')
