@@ -44,9 +44,18 @@ const Contact = () => {
         setMessage("")
         setMessageError(false)
     }
+
+    function resetErrors() {
+        setError(false)
+        setNameError(false)
+        setEmailError(false)
+        setTopicError(false)
+        setMessageError(false)
+    }
  
     function handleFormSubmit (event) {
         event.preventDefault();
+        resetErrors();
         if( name === '') {
             setError(true) 
             setNameError(true)

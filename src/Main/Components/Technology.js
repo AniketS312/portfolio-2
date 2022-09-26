@@ -11,7 +11,7 @@ import classes from './Technology.module.css'
 
 const Technology = () => {
     return (
-        <section className={classes.technology}>
+        <section id="technology" className={classes.technology}>
             <h4>Technology</h4>
             <div className={classes['tech-stack']}>
                 <TechStack 

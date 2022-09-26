@@ -3,12 +3,14 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Main from './Main/Main';
 import SideBar from './SideBar/SideBar';
+import SideBarMobileLeft from './SidebarMobile/SideBarMobileLeft';
 
 function App() {
   // States to set Page Number
   const [pageNumber, setPageNumber] = useState('01')
   const [mainHeight, setMainHeight] = useState(0)
   const [sectionHeights, setSectionHeights] = useState([])
+  const windowWidth = window.innerWidth;
 
 useEffect(() => {
   const heights = []
@@ -53,10 +55,16 @@ function changePageNumber() {
 
   return (
     <div className="App">
-      <SideBar 
+      {windowWidth < 1361 ? <SideBarMobileLeft /> : <SideBar 
         PageNumber={pageNumber}
         contactFunction={contactFunction}  
-      />
+      />}
+
+      <SideBarMobileLeft />
+      {/* <SideBar 
+        PageNumber={pageNumber}
+        contactFunction={contactFunction}  
+      /> */}
       <Main />
     </div>
   );

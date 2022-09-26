@@ -6,7 +6,7 @@ import SelfImage from '../../assets/placeholder.jpg'
 
 const Introducton = (props) => {
     return (
-        <section className={classes.introduction}>
+        <section id="introduction" className={classes.introduction}>
             <div className={classes['introduction__text']}>
                 <IntroductionText />
             </div>

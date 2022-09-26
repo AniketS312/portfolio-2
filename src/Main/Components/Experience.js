@@ -6,7 +6,7 @@ import classes from './Experience.module.css';
 
 const Experience = () => {
     return (
-        <section className={classes['experience-section']}>
+        <section id="experience" className={classes['experience-section']}>
             <Timeline />
             <CoverLetter />
         </section>
@@ -15,7 +15,7 @@ const Experience = () => {
 
 const Timeline = () => {
     return (
-        <div>
+        <div className={classes.experience}>
             <h4>Experience</h4>
             <div className={classes.timeline}>
                 <TimelineSlot 

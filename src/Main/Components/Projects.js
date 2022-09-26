@@ -4,7 +4,7 @@ import classes from './Projects.module.css';
 
 const Projects = () => {
     return (
-        <section className={classes.projects}>
+        <section id="projects" className={classes.projects}>
             <h4>Projects</h4>
             <div className={classes['project-grid']}>
               <IndividualProject 

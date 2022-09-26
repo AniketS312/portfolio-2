@@ -71,3 +71,13 @@
 }
 
 
+@media only screen and (max-width: 1000px) {
+    .experience-section {
+        flex-direction: column;
+    }
+
+    .experience-section .experience {
+        padding: 0 2rem;
+    }
+}
+

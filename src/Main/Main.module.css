@@ -1,8 +1,25 @@
 .main {
-    width: 75%;
+    width: 92%;
     height: auto;
     position: absolute;
     right: 0;
     top: 0;
     overflow: hidden;
+}
+
+/* Mobile Optimization */
+
+@media only screen and (min-width: 1361px) {
+   .main {
+    width: 75%;
+   }
+}
+
+@media only screen and (max-width: 1020px) {
+    .main {
+        width: 100%;
+        position: relative;
+    }
+
+
 }

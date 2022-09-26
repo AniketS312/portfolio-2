@@ -5,7 +5,7 @@ import { Desktop, TerminalFilled, Bookmark, Application } from './SkillsIcon'
  
 const Skills = (props) => {
     return (
-        <section className={classes.skills}>
+        <section id="skills" className={classes.skills}>
             <SkillsDiscription />
             <SkillsCoverLetter />
         </section>
