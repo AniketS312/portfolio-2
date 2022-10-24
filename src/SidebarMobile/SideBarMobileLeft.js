@@ -29,10 +29,10 @@ function SideBarMobileLeft (props) {
     return (
         <>
         <nav className={classes['nav-section']}> 
-        <button onClick={showMenu}><Menu2Filled /></button>
+        <button name="open menus" onClick={showMenu}><Menu2Filled /></button>
         </nav>
         <div id="menu" className={classes.menu}>
-            <button onClick={hideMenu}><ExitIcon /></button>
+            <button name="close menu" onClick={hideMenu}><ExitIcon /></button>
             <ul>
                 <li><button onClick={(e) => {navigate('#introduction', e)}}>home</button></li>
                 <li><button onClick={(e) => {navigate('#skills', e)}}>Skills</button></li>

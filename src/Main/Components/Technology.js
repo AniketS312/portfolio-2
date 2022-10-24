@@ -1,11 +1,12 @@
 import React from "react";
 
-import {ImHtmlFive2, ImCss3} from 'react-icons/im';
-import { TbBrandNextjs } from 'react-icons/tb';
-import { GrReactjs } from 'react-icons/gr';
-import { FaNodeJs } from 'react-icons/fa';
-import { SiPostgresql } from 'react-icons/si'
-import  { DiJavascript1 } from 'react-icons/di'
+import HTMLIcon from "./TechIcons/Html";
+import Css from './TechIcons/Css';
+import Javascript from './TechIcons/JavaScript';
+import NodeJs from './TechIcons/Nodejs';
+import PostgreSQL from "./TechIcons/Postgresql";
+import ReactIcon from './TechIcons/ReactIcon';
+import Sass from './TechIcons/Sass';
 
 import classes from './Technology.module.css'
 
@@ -15,35 +16,35 @@ const Technology = () => {
             <h4>Technology</h4>
             <div className={classes['tech-stack']}>
                 <TechStack 
-                    icon={<ImHtmlFive2 />}
+                    icon={<HTMLIcon />}
                     technology="HTML"
                 />
                 <TechStack 
-                    icon={<ImCss3 />}
+                    icon={<Css />}
                     technology="CSS"
                 />
                 <TechStack 
-                    icon={<DiJavascript1 />}
+                    icon={<Javascript />}
                     technology="JavaScript"
                 />
                 <TechStack 
-                    icon={<GrReactjs />}
+                    icon={<ReactIcon />}
                     technology="React"
                 />
                 
                 <TechStack 
-                    icon={<FaNodeJs />}
+                    icon={<NodeJs />}
                     technology="Node JS"
                 />
                 <TechStack 
-                    icon={<SiPostgresql />}
+                    icon={<PostgreSQL />}
                     technology="PostgreSQL"
                 />
                 {/* Next JS has to be last as fill will not work on svg design
                  */}
                 <TechStack 
-                    icon={<TbBrandNextjs />}
-                    technology="Next JS"
+                    icon={<Sass />}
+                    technology="SASS"
                 />
             </div>
         </section>

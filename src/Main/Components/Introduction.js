@@ -2,13 +2,15 @@ import React from "react";
 
 import classes from './Introduction.module.css'
 
-import SelfImage from '../../assets/placeholder.jpg'
+import SelfImage from '../../assets/aniket-sharma.webp'
 
 const Introducton = (props) => {
     return (
         <section id="introduction" className={classes.introduction}>
             <div className={classes['introduction__text']}>
-                <IntroductionText />
+                <IntroductionText 
+                    contactFunction={props.contactFunction}  
+                />
             </div>
             <div className={classes['introduction__image']}>
                 <img src={SelfImage} alt='Signature of Aniket Sharma'/>
@@ -17,24 +19,19 @@ const Introducton = (props) => {
     )
 };
 
-const IntroductionText = () => {
-    const LinkedIn = 'www.google.com';
-    const Github = 'www.google.com';
-    const ContactMe = 'www.google.com';
-
-    function preventDefault(e) {
-        e.preventDefault();
-    }
+const IntroductionText = (props) => {
+    const LinkedIn = 'https://www.linkedin.com/in/andy-s-554b03212/';
+    const Github = 'https://github.com/AniketS312';
 
     return (
         <>
             <span>Hello, My Name Is</span> 
             <h1>Aniket Sharma</h1>
-            <p>I am a developer, designer, and marketer. I love to create using Javascript on both frontend and backend. Not only do I develop but I started my career helping small businesses build or bolster their digital marketing. Most important of all my tasks, I help businesses find solutions to their problems.</p>
+            <p>I am a developer, designer, and marketer. I love to create using Javascript on both frontend and backend. Not only do I develop but I started my career helping small businesses build or bolster their digital marketing. I enjoy helping businesses find solution to their digital problems.</p>
             <div>
-                <a onClick={preventDefault} href={LinkedIn}>LinkedIn</a>
-                <a onClick={preventDefault} href={Github}>GitHub</a>
-                <a onClick={preventDefault} href={ContactMe}>Contact Me</a>
+                <a target="_blank"  href={LinkedIn}>LinkedIn</a>
+                <a target="_blank"  href={Github}>GitHub</a>
+                <a onClick={props.contactFunction}>Contact Me</a>
             </div>
         </>
     )

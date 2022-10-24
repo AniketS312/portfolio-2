@@ -65,7 +65,7 @@ function changePageNumber() {
         PageNumber={pageNumber}
         contactFunction={contactFunction}  
       /> */}
-      <Main />
+      <Main contactFunction={contactFunction}  />
     </div>
   );
 };

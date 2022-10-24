@@ -53,16 +53,28 @@ height: 700px;
 }
 
 .one {
-    background-image: url(../../assets/weather-app.png);
+    background-image: url(../../assets/weather-app.webp);
 }
 
 .two {
-    background-image: url(../../assets/arch.png);
+    background-image: url(../../assets/arch.webp);
 }
 
 .three {
-    background-image: url(../../assets//lana.png  );
+    background-image: url(../../assets//lana.webp  );
 }
+
+@media only screen and (max-width: 1281px) {
+    .project-grid .project a { 
+        left: 0%;
+    }
+
+    .project-grid .project:hover > * {
+        transform: none;
+    
+    }
+ }
+
 
 @media only screen and (max-width: 1100px) {
     .projects {
@@ -73,6 +85,7 @@ height: 700px;
         grid-template-rows: 1fr 1fr 1fr;
         height: 1300px;
     }
+
 }
 
 @media only screen and (max-width: 830px) {

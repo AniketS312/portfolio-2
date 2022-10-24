@@ -36,14 +36,14 @@
 .tech-stack svg {
     fill: white;
 }
-
+/* 
 .tech-stack div:last-of-type svg {
     fill: transparent;
 }
 
 .tech-stack div:last-of-type svg path {
     color: white;
-}
+} */
 
 @media only screen and (max-width: 1000px) {
 .technology h4 {

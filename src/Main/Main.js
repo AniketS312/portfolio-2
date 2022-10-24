@@ -14,7 +14,9 @@ const Main = (props) => {
 
     return (
         <main className={classes.main} id="main">
-            <Introduction />
+            <Introduction 
+            contactFunction={props.contactFunction}  
+            />
             <Skills />
             <Projects />
             <Experience />
