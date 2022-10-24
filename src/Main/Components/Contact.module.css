@@ -11,6 +11,32 @@
     flex-basis: 50%;
 }
 
+.contact-info ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: .5rem;
+}
+
+.contact-info ul span {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+}
 
 .form {
     background-color: #ED6A5E;
@@ -58,6 +84,7 @@ form input[type=submit] {
 
 form textarea {
     height: 6rem;
+    font-family: inherit;
 }
 
 form input:focus,

@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 
 
 import classes from './Contact.module.css'
+import LinkedInIcon from "./ContactIcons/Linkedin";
+import EmailIcon from "./ContactIcons/Email";
 
 const Contact = () => {
     const form = useRef();
@@ -94,12 +96,11 @@ const Contact = () => {
         <section className={classes.contact} id="contact">
             <div className={classes['contact-info']}>
                 <h4>Get In Touch</h4>
-                <span>Lorem ipsum dolor sit amet. Non nisi fugiat quia mollitia At nemo facere. Aut quos facere ab voluptatibus amet est nostrum quae ut internos possimus. Architecto voluptatem qui fugit odit a excepturi dignissimos qui illum atque rem soluta eius.</span>
-                <p>
-                Ut illum nemo ea repellat fuga et obcaecati iusto non ullam tempore est nihil nemo id voluptatem sunt quo consectetur totam. Ut sapiente odit sed quam natus eum itaque assumenda placeat incidunt.
-
-                Ut galisum recusandae in enim minima et voluptas sunt eos praesentium adipisci vel excepturi iusto in facere minima. Et adipisci commodi ut nulla corrupti ut odit quaerat qui voluptatem blanditiis. Nam eius quasi in quam sunt id necessitatibus quos non repellat eligendi et commodi quia qui ipsa quod ut temporibus reiciendis. Non consequatur unde eos quasi harum et beatae dignissimos est reprehenderit animi qui nihil dicta non sint voluptatibus.
-                </p>
+                <p>Would you like to contact me regarding a work oppurtunity? Got any feedback for me? Don't hesitate to reach out via the contact form. Here are other ways you can reach out to me:</p>
+                <ul>
+                    <li><span>{<LinkedInIcon />}</span><a href="https://www.linkedin.com/in/andy-sharma-554b03212/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                    <li><span>{<EmailIcon />}</span><a href="mailto: aniketsharma312@gmail.com">Email</a></li>
+                </ul>
             </div>
             <div className={classes['contact-form']}>
                 <div className={classes.form}>

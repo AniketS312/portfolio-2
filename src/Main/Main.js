@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import Introduction from './Components/Introduction';
 import Skills from './Components/Skills';

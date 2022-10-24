@@ -81,3 +81,12 @@
         flex-direction: column;
     }
 }
+
+@media only screen and (max-width: 377px) {
+    .introduction__text h1 {
+        font-size: 3rem;
+    }
+    .introduction__text p {
+        margin-right: 0;
+    }
+}

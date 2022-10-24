@@ -8,42 +8,41 @@ const Projects = () => {
             <h4>Projects</h4>
             <div className={classes['project-grid']}>
               <IndividualProject 
-                projectLink='#'
-                projectLinkClass={classes['one-project']}
+                projectLink='https://anikets312.github.io/Weather-App/'
                 projectName="Weather App"
                 projectStack="HTML, CSS, Javascript, FetchAPI"
                 projectClass={classes['one']}
               />
                 <IndividualProject 
-                projectLink='#'
-                projectName="Arch"
-                projectStack="HTML, SCSS, Javascript"
+                projectLink='https://anikets312.github.io/Weather-App/'
+                projectName="Weather App"
+                projectStack="HTML, CSS, Javascript, FetchAPI"
                 projectClass={classes['two']}
               />
 
               <IndividualProject 
-                projectLink='#'
-                projectName="Lana"
-                projectStack="HTML, SCSS, Javascript"
+                projectLink='https://www.lexiedrew.com/'
+                projectName="Lexi Drew"
+                projectStack="Wix, Javascript, React"
                 projectClass={classes['three']}
               />
                <IndividualProject 
-                projectLink='#'
-                projectName="Lana"
-                projectStack="HTML, SCSS, Javascript"
-                projectClass={classes['three']}
+                projectLink='https://haze-photographer.netlify.app/'
+                projectName="Haze"
+                projectStack="HTML, SCSS, Javascript, React"
+                projectClass={classes['four']}
               />
                <IndividualProject 
-                projectLink='#'
+                projectLink='https://anikets312.github.io/Lana/'
                 projectName="Lana"
                 projectStack="HTML, SCSS, Javascript"
-                projectClass={classes['three']}
+                projectClass={classes['five']}
               />
                <IndividualProject 
-                projectLink='#'
-                projectName="Lana"
-                projectStack="HTML, SCSS, Javascript"
-                projectClass={classes['three']}
+                projectLink='https://anikets312.github.io/arch/'
+                projectName="Arch"
+                projectStack="HTML, CSS, Javascript"
+                projectClass={classes['six']}
               />
             </div>
         </section>
@@ -53,7 +52,7 @@ const Projects = () => {
 const IndividualProject = (props) => {
     return (
         <div className={classes.project}>
-            <a href={props.projectLink} >{props.projectName} <span>{props.projectStack}</span></a>
+            <a href={props.projectLink} target="_blank" rel="noreferrer">{props.projectName} <span>{props.projectStack}</span></a>
             <div className={props.projectClass}></div>
         </div>
     )

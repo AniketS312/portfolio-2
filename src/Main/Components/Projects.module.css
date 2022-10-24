@@ -57,11 +57,23 @@ height: 700px;
 }
 
 .two {
-    background-image: url(../../assets/arch.webp);
+    background-image: url(../../assets/weather-app.webp);
 }
 
 .three {
-    background-image: url(../../assets//lana.webp  );
+    background-image: url(../../assets/lexie-drew.webp);
+}
+
+.four {
+    background-image: url(../../assets//haze.webp);
+}
+
+.five {
+    background-image: url(../../assets//lana.webp);
+}
+
+.six {
+    background-image: url(../../assets/arch.webp);
 }
 
 @media only screen and (max-width: 1281px) {

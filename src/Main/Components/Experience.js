@@ -63,9 +63,10 @@ const CoverLetter = () => {
         <div className={classes['cover-letter']}>
             <h4>Cover Letter</h4>
             <span>Firstly, I would like to thank you for taking the time to view my portfolio website and if you have any questions I am more than happy to help if you reach out. </span>
-            <p>I have made this website to showcase my talents and interest of working as a front end web developer. Currently I am working to become a full stack developer by using the MERN stack with the option of working with PostGRES.</p>
+            <p>I have made this website to showcase my talents and interest of working as a front end web developer. Currently I am working to become a full stack developer by using the MERN stack.</p>
+            <p>MERN stack is not the only tech stack I am used to. I do know the importance of "one size does not fit all" in web development. I have worked with query based languages such as PostgreSQL. I have used javascript library such as D3.js for data and many other tools when it was necessary to do so.</p>
             <p>With over a year of development experience and multiple years of experience in web design, marketing and customer management, I am more than capable of handling projects in both solo and team environments. I have worked in many different types of induestires that needed help with their digital presense and my background in business helps me analyze many of the needs.</p>
-            <p>I am confiendent in my abilties to learn the stack a oraganization uses. And with time to learn a companies culture and customs I will prove to be an asset and a major contributor on projects going forward.</p>
+            <p>I am confident in my abilties to learn the stack any oraganization uses. And with time to learn a companies culture and customs I will prove to be an asset and a major contributor on projects going forward.</p>
             <img width={'250px'} height={'50px'} alt="Signature of Aniket Sharma." src={Signature}/>
         </div>
         )};
