@@ -18,32 +18,37 @@ useEffect(() => {
   setSectionHeights(heights)
 }, [])
 
-function changePageNumber() {
-  if(mainHeight <= sectionHeights[0] + 50) {
-    setPageNumber('01')
-  } else if(mainHeight > sectionHeights[0] && mainHeight < sectionHeights[1] + 50) {
-    setPageNumber('02')
-  }
-  else if(mainHeight > sectionHeights[1] && mainHeight < sectionHeights[2] +50) {
-    setPageNumber('03')
-  }
-  else if(mainHeight > sectionHeights[2] + 30 && mainHeight < sectionHeights[3]) {
-    setPageNumber('04')
-  }
-  else if(mainHeight > sectionHeights[3] + 50 && mainHeight < sectionHeights[4]){
-    setPageNumber('05')
-  } else if (mainHeight >= sectionHeights[4]) {
-    setPageNumber('06')
-  }
-}
 
+
+useEffect(() => {
+
+}, [mainHeight])
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
       setMainHeight(Math.abs(document.querySelector('#main').getBoundingClientRect().top))  
+
+      function changePageNumber() {
+        if(mainHeight <= sectionHeights[0] + 50) {
+          setPageNumber('01')
+        } else if(mainHeight > sectionHeights[0] && mainHeight < sectionHeights[1] + 50) {
+          setPageNumber('02')
+        }
+        else if(mainHeight > sectionHeights[1] && mainHeight < sectionHeights[2] +50) {
+          setPageNumber('03')
+        }
+        else if(mainHeight > sectionHeights[2] + 20 && mainHeight < sectionHeights[3]) {
+          setPageNumber('04')
+        }
+        else if(mainHeight > sectionHeights[3] + 50 && mainHeight < sectionHeights[4]){
+          setPageNumber('05')
+        } else if (mainHeight >= sectionHeights[4]) {
+          setPageNumber('06')
+        }
+      }
       changePageNumber()
     })
-  }, [mainHeight])
+  }, [mainHeight, sectionHeights])
 
 
   // SIDEBAR - Contact me text function
