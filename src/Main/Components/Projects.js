@@ -8,9 +8,9 @@ const Projects = () => {
             <h4>Projects</h4>
             <div className={classes['project-grid']}>
               <IndividualProject 
-                projectLink='https://anikets312.github.io/Weather-App/'
-                projectName="Weather App"
-                projectStack="HTML, CSS, Javascript, FetchAPI"
+                projectLink='https://bank-dashboard-andy.netlify.app/'
+                projectName="Better Bank Dashboard (Desktop Only)"
+                projectStack="React, D3.js, React Hooks"
                 projectClass={classes['one']}
               />
                 <IndividualProject 
