@@ -50,8 +50,11 @@ const Description = (props) => {
     )
 };
 
-const toGithub = function(event) {
+const toGithub = function() {
     window.open('https://github.com/AniketS312')
+}
+const toResume = function() {
+    window.open('https://drive.google.com/drive/folders/1A8OAslUig317to8fGIeb5K7iSTROcjSn?usp=sharing')
 }
 
 const SkillsCoverLetter = () => {
@@ -63,7 +66,7 @@ const SkillsCoverLetter = () => {
             <p>I worked with some of the most memorable clients. Through them I learned how to manage expectations and the flexiblity of finding and communicating solutions.</p>
             <p>I want to bring everything I have learned throughout the years to your oragnization and projects and build a solution that works for you.</p>
             <div className={classes.buttons}>
-                <button>My Resume</button>
+                <button onClick={toResume}>My Resume</button>
                 <button onClick={toGithub}>My Github</button>
             </div>
         </div>
