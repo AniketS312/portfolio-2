@@ -24,12 +24,12 @@ const SideBar = (props) => {
                 <PersonalInfo 
                     description="Email"
                     descriptionInfo="aniketsharma312@gmail.com"
-
+                    contactFunction={props.contactFunction[1]}
                 />
                 <PersonalInfo 
                     description="Contact Form"
                     descriptionInfo="Contact Me"
-                    contactFunction={props.contactFunction}
+                    contactFunction={props.contactFunction[0]}
                 />      
             </div>
             <img width={'250px'} height={'50px'} src={Signature} alt='Signature of Aniket Sharma'/>

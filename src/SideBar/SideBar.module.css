@@ -32,10 +32,13 @@
 
 .description-container {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
 }
 
 .description {
-    margin-bottom: 2rem;
+    height: auto;
 }
 
 .description h3 {
@@ -47,10 +50,35 @@
     color: #F1EDEE;
     letter-spacing: .1rem;
     text-decoration: none;
+    overflow: hidden;
 }
 
-.description:last-child {
+.description:last-child p,
+.description:nth-last-child(2) p {
     cursor: pointer;
+    position: relative;
+}
+.description:last-child p::after,
+.description:nth-last-child(2) p::after {
+    position: absolute;
+    content: ' ';
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    left: -100%;
+    z-index: 100;
+    margin-top: .2rem;
+    transition: .5s;
+}
+
+.description:last-child p::after {
+    width: 40%;
+}
+
+.description:last-child p:hover::after,
+.description:nth-last-child(2) p:hover::after {
+ left: 0%;
 }
 
 .nav-section img {

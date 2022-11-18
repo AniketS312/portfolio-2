@@ -58,11 +58,18 @@ useEffect(() => {
     theContactForm.scrollIntoView({behavior: "smooth", block: "end"  })
   } 
 
+  // SIDEBAR - Email me text function
+  function emailFunction(e) {
+    e.preventDefault()
+    window.location.href = "mailto:aniketsharma312@gmail.com";
+  }
+
+
   return (
     <div className="App">
       {windowWidth < 1361 ? <SideBarMobileLeft /> : <SideBar 
         PageNumber={pageNumber}
-        contactFunction={contactFunction}  
+        contactFunction={[contactFunction, emailFunction]}  
       />}
 
       <SideBarMobileLeft />

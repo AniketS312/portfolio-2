@@ -81,3 +81,21 @@
     }
 }
 
+@media only screen and (max-width: 950px) {
+    .menu {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .menu {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .menu {
+        width: 100%;
+    }
+}
+

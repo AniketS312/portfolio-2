@@ -54,7 +54,7 @@ const toGithub = function() {
     window.open('https://github.com/AniketS312')
 }
 const toResume = function() {
-    window.open('https://drive.google.com/drive/folders/1A8OAslUig317to8fGIeb5K7iSTROcjSn?usp=sharing')
+    window.open('https://drive.google.com/file/d/1lXJ8CFz5fr465V9d0uewQ2m97gZsgr8I/view?usp=sharing')
 }
 
 const SkillsCoverLetter = () => {
