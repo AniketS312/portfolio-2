@@ -21,12 +21,11 @@
 }
 
 .introduction__text p {
-    margin-bottom: 2rem;
     margin-right: 3rem;
     color: #414535;
 }
 
-.introduction__text a {
+.introduction__text .social-icons {
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -89,4 +88,49 @@
     .introduction__text p {
         margin-right: 0;
     }
+}
+
+/* Contact me button styling */
+
+.contact {
+    margin-bottom: 1rem;
+}
+
+.contact-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 2px solid #ED6A5E;
+    padding: .8rem 1.5rem;
+    font-weight: 500;
+    border-radius: 25px;
+    color: #ED6A5E;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.contact-button::before {
+    position: absolute;
+    z-index: 5;
+    content: '';
+    top: 0;
+    left: 0;
+    border: 2px solid #eba7a1;
+    border-radius: 25px;    
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.contact-button:hover::before {
+    animation-name: buttonHover;
+    animation-duration: .5s;
+}
+
+@keyframes buttonHover {
+    1% { opacity: 1 }
+    100% { opacity: 0; scale: 1.4;}
 }
