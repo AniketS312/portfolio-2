@@ -32,8 +32,10 @@ const SideBar = (props) => {
                     contactFunction={props.contactFunction[0]}
                 />      
             </div>
-            <img width={'250px'} height={'50px'} src={Signature} alt='Signature of Aniket Sharma'/>
-            <span className={classes['page-number']}>{props.PageNumber}</span>
+            <div className={classes.signoff}>
+                <img width={'250px'} height={'50px'} src={Signature} alt='Signature of Aniket Sharma'/>
+                <span className={classes['page-number']}>{props.pageSection}</span>
+            </div>
         </section>
     )
 };

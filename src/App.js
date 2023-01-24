@@ -8,6 +8,7 @@ import SideBarMobileLeft from './SidebarMobile/SideBarMobileLeft';
 function App() {
   // States to set Page Number
   const [pageNumber, setPageNumber] = useState('01')
+  const [pageSection, setPageSection] = useState('Intro')
   const [mainHeight, setMainHeight] = useState(0)
   const [sectionHeights, setSectionHeights] = useState([])
   const windowWidth = window.innerWidth;
@@ -31,19 +32,26 @@ useEffect(() => {
       function changePageNumber() {
         if(mainHeight <= sectionHeights[0] + 50) {
           setPageNumber('01')
+          setPageSection('Intro')
         } else if(mainHeight > sectionHeights[0] && mainHeight < sectionHeights[1] + 50) {
           setPageNumber('02')
+          setPageSection('Skills')
         }
         else if(mainHeight > sectionHeights[1] && mainHeight < sectionHeights[2] +50) {
           setPageNumber('03')
+          setPageSection('Projects')
         }
         else if(mainHeight > sectionHeights[2] + 20 && mainHeight < sectionHeights[3]) {
           setPageNumber('04')
+          setPageSection('Experience')
         }
         else if(mainHeight > sectionHeights[3] + 50 && mainHeight < sectionHeights[4]){
           setPageNumber('05')
-        } else if (mainHeight >= sectionHeights[4]) {
+          setPageSection('Technologies')
+        }
+         else if (mainHeight >= sectionHeights[4]) {
           setPageNumber('06')
+          setPageSection('Contact Me')
         }
       }
       changePageNumber()
@@ -69,6 +77,7 @@ useEffect(() => {
     <div className="App">
       {windowWidth < 1361 ? <SideBarMobileLeft /> : <SideBar 
         PageNumber={pageNumber}
+        pageSection={pageSection}
         contactFunction={[contactFunction, emailFunction]}  
       />}
 

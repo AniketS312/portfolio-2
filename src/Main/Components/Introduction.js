@@ -1,8 +1,9 @@
 import React from "react";
-
 import classes from './Introduction.module.css'
-
 import SelfImage from '../../assets/aniket-sharma.webp'
+import LinkedIn from "./TechIcons/Linkedin";
+import GitHub from "./TechIcons/Github";
+import MailAdd from "./TechIcons/Email";
 
 const Introducton = (props) => {
     return (
@@ -25,11 +26,11 @@ const IntroductionText = (props) => {
         <>
             <span>Hello, My Name Is</span> 
             <h1>Aniket Sharma</h1>
-            <p>I am a developer, designer, and marketer. I love to create using Javascript on both frontend and backend. Not only do I develop but I started my career helping small businesses build or bolster their digital marketing. I enjoy helping businesses find solution to their digital problems.</p>
+            <p>I am a developer, designer, and marketer. I love to create using Javascript on both frontend and backend,as well as helping small businesses by improving their digital footprint all while continuously learning.</p>
             <div>
-                <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/andy-sharma-554b03212/'>LinkedIn</a>
-                <a target="_blank" rel="noreferrer" href='https://github.com/AniketS312'>GitHub</a>
-                <a href="https://anikets.dev/" onClick={props.contactFunction}>Contact Me</a>
+                <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/andy-sharma-554b03212/'><LinkedIn /></a>
+                <a target="_blank" rel="noreferrer" href='https://github.com/AniketS312'><GitHub /></a>
+                <a href="https://anikets.dev/" onClick={props.contactFunction}><MailAdd /></a>
             </div>
         </>
     )

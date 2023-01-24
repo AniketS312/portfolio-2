@@ -35,15 +35,19 @@
 .skills .services {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 2rem;
 }
 
+.skills .services .text {
+    width: 100%;
+}
 
-.skills .services br {
+
+/* .skills .services br {
     display: block;
     margin-bottom: 2rem;
-}
+} */
 
 .buttons {
     display: flex;

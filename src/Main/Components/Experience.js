@@ -18,26 +18,26 @@ const Timeline = () => {
         <div className={classes.experience}>
             <h4>Experience</h4>
             <div className={classes.timeline}>
-                <TimelineSlot 
-                year="2016"
-                timeframe="2016-2018"
-                description="Worked as a personal banking associate for a credit union. Took pride in learning the financial side of businesses. Formed many one on one relations as a floater with clients."
+            <TimelineSlot 
+                year="2021"
+                timeframe="2021-2023"
+                description="Futher improved desgin and development skills by helping local small businesses by improving their digital footprint under Digital Main Street powered by Google."
                 />
-                 <TimelineSlot 
+                                <TimelineSlot 
+                year="2019"
+                timeframe="2019-2021"
+                description="Established the first job in web development at a digital agency in Chicago. Provided design, development, and marketing input to clients in different industries."
+                />
+                                 <TimelineSlot 
                 year="2018"
                 timeframe="2018-2019"
                 description=" Reported as a Junior Accountant for BDO. Completed compilations/audits for companies and oraganization on a timely manner. Report progress and complete tasks for immidiate superior"
                 />
                 <TimelineSlot 
-                year="2019"
-                timeframe="2019-2021"
-                description="Established the first job in web development at a digital agency in Chicago. Provided design, development, and marketing input to clients in different industries."
-                />
-                <TimelineSlot 
-                year="2021"
-                timeframe="2021-2022"
-                description="Futher improved desgin and development skills by helping local small businesses by imrpoving their digital footprint under Digital Main Street powered by Google."
-                />
+                year="2016"
+                timeframe="2016-2018"
+                description="Worked as a personal banking associate for a credit union. Took pride in learning the financial side of businesses. Formed many one on one relations as a floater with clients."
+                />       
             </div>
         </div>
     
